@@ -50,7 +50,7 @@ def pcode():
     if codePrint:
         for i in range(len(art.code)):
             print(art.code[i],sep='', end='',flush= True);sleep(codingSpeed)
-        input(colored('python3','blue')+colored(' PyBirthdayWish.py','yellow'))
+        input('\n\n'+colored('python3','blue')+colored(' PyBirthdayWish.py','yellow'))
         os.system('cls' if os.name == 'nt' else 'clear')
     else:
         input()
