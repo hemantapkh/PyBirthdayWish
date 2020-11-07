@@ -9,6 +9,6 @@ codingSpeed = 0.01
 faceArt = False
 faceArtSpeed = 0.1
 # Random color is choosen from the list
-color = ['grey','red','green','yellow','blue','magenta','cyan','white']
+color = ['red','green','yellow','blue','magenta','cyan','white']
 # Change the keys of the dict to change the color codes
 colorCodes = {'①':'grey','②':'red','③':'green','④':'yellow','⑤':'blue','⑥':'magenta','⑦':'cyan','⑧':'white','⑨':'blink','⑩':'none'}
