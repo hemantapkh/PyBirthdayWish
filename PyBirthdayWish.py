@@ -40,6 +40,9 @@ def pprint(art,time):
             # color attr none if 10
             elif art[i] == '⑩':
                 colorAttribute = []
+            # Random color if R
+            elif art[i] == '®':
+            	color_used = color
             else:
                 color_used = [colorCodes[art[i]]]
                 

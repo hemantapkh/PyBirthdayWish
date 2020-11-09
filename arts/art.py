@@ -13,7 +13,8 @@ Example: See colored-art.py
 ⑦ = cyan
 ⑧ = white
 ⑨ = blink
-⑩ = none
+⑩ = remove blink
+® = random
 '''
 
 # Happy Birthday Love
@@ -26,7 +27,7 @@ mainArt = \
 '''
 
 
-           _..._  ,s$$$s.                                                                                         _..._  ,s$$$s.
+           _..._  ,s$$$s.                                                                                          _..._  ,s$$$s.
          .$$$$$$$s$$ss$$$$,                                                                                     .$$$$$$$s$$ss$$$$,
          $$$sss$$$$s$$$$$$$                                                                                     $$$sss$$$$s$$$$$$$
          $$ss$$$$$$$$$$$$$$                                   (             )                                   $$ss$$$$$$$$$$$$$$
