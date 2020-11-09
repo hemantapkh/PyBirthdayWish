@@ -5,6 +5,9 @@ speed = 0.005
 # Speed of code printing
 codePrint = True
 codingSpeed = 0.01
+# Audio
+playAudio = True
+audio = 'Happy Birthday.mp3'
 # speed of faceart
 faceArt = False
 faceArtSpeed = 0.1

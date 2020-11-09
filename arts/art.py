@@ -1,9 +1,8 @@
-# This is uncolored art. Use the color code to decorate the art as in sample colored-art.py
+# This is uncolored art. Use the color code to decorate the art as shown in example.py
 
 # Color Codes
 '''
 Copy these codes and paste it before the text for the color your wish
-Example: See colored-art.py 
 ① = grey
 ② = red
 ③ = green

@@ -1,9 +1,11 @@
 #!/usr/bin/python3
 
-import os,random
+from playsound import playsound
 from termcolor import colored
+from threading import Thread
 from time import sleep
 from config import *
+import os,random
 
 # Importing module specified in the config file
 art = __import__(f'arts.{artFile}', globals(), locals(), ['*'])
@@ -48,6 +50,10 @@ def pprint(art,time):
                 
         print(colored(replaceMultiple(art[i],colorCodes,''),random.choice(color_used),attrs=colorAttribute),sep='', end='',flush= True);sleep(time)
 
+def pAudio():
+    if playAudio:
+        playsound(audio)
+        
 def pcode():
     # Print the code before wishing 
     if codePrint:
@@ -61,5 +67,6 @@ def pcode():
 # Clearing terminal
 os.system('cls' if os.name == 'nt' else 'clear')
 pcode()
-pprint(art.mainArt,speed)
+Thread(target = pAudio).start()
+Thread(target = pprint, args=(art.mainArt,speed)).start()
 input()
