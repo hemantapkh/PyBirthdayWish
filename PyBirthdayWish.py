@@ -1,11 +1,13 @@
 #!/usr/bin/python3
 
-from playsound import playsound
-from termcolor import colored
+import os,random
 from threading import Thread
 from time import sleep
+
+from playsound import playsound
+from termcolor import colored
+
 from config import *
-import os,random
 
 # Importing module specified in the config file
 art = __import__(f'arts.{artFile}', globals(), locals(), ['*'])
