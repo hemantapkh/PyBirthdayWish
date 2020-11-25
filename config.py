@@ -7,7 +7,7 @@ codePrint = True
 codingSpeed = 0.01
 # Audio
 playAudio = True
-audio = 'Happy Birthday.mp3'
+audio = 'HappyBirthday.mp3'
 # Random color is choosen from the list
 color = ['red','green','yellow','blue','magenta','cyan','white']
 # Change the keys of the dict to change the color codes
