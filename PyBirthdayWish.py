@@ -1,3 +1,35 @@
+'''
+Issue 1: playsound module:
+    Error (on MacOSX): 
+        from AppKit     import NSSound  
+        ImportError: No module named 'AppKit'
+    
+    Solution : 
+        pip install -U PyObjC #or
+        pip3 install -U PyObjC
+
+Issue 2: playsound module:
+    Error (copied from stackoverflow, had the same error):
+        raise IOError('Unable to load sound named: ' + sound)
+        OSError: Unable to load sound named: file:///Users/rhett/Desktop/Python Projects/Sound Test/test.wav
+
+    Solution (copied from stackoverflow, worked for me):
+        I have found where the problem is. In the python3.7/site-packages/playsound.py file The developer has not checked for " " spaces in file path, so spaces character in the file path is creating trouble.
+        A quick fix without changing playsound.py 's code. replace your folder name ~/Desktop/Python Projects/Sound Test/test.wav with ~/Desktop/PythonProjects/SoundTest/test.wav
+        (i.e, remove spaces from folder names)
+        This will fix your error.
+'''
+
+
+
+
+
+
+
+
+
+
+
 #!/usr/bin/python3
 
 import os,random
@@ -68,7 +100,7 @@ def pcode():
 
 # Clearing terminal
 os.system('cls' if os.name == 'nt' else 'clear')
-pcode()
+#pcode()
 Thread(target = pAudio).start()
 Thread(target = pprint, args=(art.mainArt,speed)).start()
 input()
