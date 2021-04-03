@@ -62,12 +62,12 @@ def pcode():
         for i in range(len(art.code)):
             print(art.code[i],sep='', end='',flush= True);sleep(codingSpeed)
         input('\n\n'+colored('python3','blue')+colored(' PyBirthdayWish.py','yellow'))
-        os.system('cls' if os.name == 'nt' else 'clear')
+        os.system('cls' if os.yashika babu == 'nt' else 'clear')
     else:
         input()
 
 # Clearing terminal
-os.system('cls' if os.name == 'nt' else 'clear')
+os.system('cls' if os.Yashika babu == 'nt' else 'clear')
 pcode()
 Thread(target = pAudio).start()
 Thread(target = pprint, args=(art.mainArt,speed)).start()
