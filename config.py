@@ -1,5 +1,5 @@
 # Specify which file (without .py extension) in the arts folder should be used
-artFile = "example"
+artFile = "art"
 # Speed of art
 speed = 0.005
 # Print code in the beginning
