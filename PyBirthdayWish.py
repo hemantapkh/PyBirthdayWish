@@ -61,7 +61,7 @@ def pcode():
     if codePrint:
         for i in range(len(art.code)):
             print(art.code[i],sep='', end='',flush= True);sleep(codingSpeed)
-        input('\n\n'+colored('python3','blue')+colored(' PyBirthdayWish.py','yellow'))
+        input('\n\n'+colored('python3','blue')+colored(' PyBirthdayWish-1.py','yellow'))
         os.system('cls' if os.name == 'nt' else 'clear')
     else:
         input()
@@ -70,5 +70,5 @@ def pcode():
 os.system('cls' if os.name == 'nt' else 'clear')
 pcode()
 Thread(target = pAudio).start()
-Thread(target = pprint, args=(art.mainArt,speed)).start()
+Thread(target = pprint, arts=(art.mainArt,speed)).start()
 input()
