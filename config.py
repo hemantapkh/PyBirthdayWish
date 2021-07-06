@@ -3,7 +3,7 @@ artFile = "example"
 # Speed of art
 speed = 0.005
 # Print code in the beginning
-codePrint = True
+codePrint = False
 codingSpeed = 0.01
 # Audio
 playAudio = True
