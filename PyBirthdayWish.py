@@ -4,8 +4,8 @@ import os,random
 from threading import Thread
 from time import sleep
 
-from playsound import playsound
 from termcolor import colored
+from playsound import playsound
 
 from config import *
 
@@ -54,7 +54,7 @@ def pprint(art,time):
 
 def pAudio():
     if playAudio:
-        playsound(audio)
+       playsound(audio)
         
 def pcode():
     # Print the code before wishing 
@@ -64,7 +64,8 @@ def pcode():
         input('\n\n'+colored('python3','blue')+colored(' PyBirthdayWish.py','yellow'))
         os.system('cls' if os.name == 'nt' else 'clear')
     else:
-        input()
+        input(colored('press {Enter}...','blue'))
+        os.system('cls' if os.name == 'nt' else 'clear')
 
 # Clearing terminal
 os.system('cls' if os.name == 'nt' else 'clear')
