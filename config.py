@@ -5,6 +5,7 @@ speed = 0.005
 # Print code in the beginning
 codePrint = False
 codingSpeed = 0.01
+codeColor='red'
 # Audio
 playAudio = True
 audio = 'HappyBirthday.mp3'
