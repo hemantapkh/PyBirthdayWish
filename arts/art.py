@@ -16,10 +16,10 @@ Copy these codes and paste it before the text for the color your wish
 ® = random
 '''
 
-# Happy Birthday Love
+# Happy Birthday Aleksandre
 '''
-https://patorjk.com/software/taag/#p=display&f=Crawford2&t=Happy%20Birthday%0A%20%20%20%20%20%20Name
-Go to the above link and generate art to replace 'Happy Birthday Love' with other text you wish to display.
+https://patorjk.com/software/taag/#p=display&f=Crawford2&t=Happy%20Birthday%0A%20%20%20%20%20%20Aleksandre
+Go to the above link and generate art to replace 'Happy Birthday Aleksandre' with other text you wish to display.
 '''
 
 mainArt = \
@@ -105,13 +105,13 @@ mainArt = \
                              |  |          ||||                   |                   ||||          |  |
                              |  |          ||||                   |       ~~*~~       ||||          |  |
                              |  |          ||||    --==*==--      |                   ||||          |  |
-                    :       .'--`.         |||| -clear------this- |                   ||||         .'--`.        :
-                  : .:     /`.__.'\        |||| -------and------- |                   ||||        /`.__.'\     : .:
-                 :    .   /        \       |||| -enter------your- |     --==*==--     ||||       /        \   :    .
-           (    ,-'``'-. ;          ;      |||| -------text------ | -clear------this- ||||      ;          ; ,-'``'-.    (
-           )\   |`-..-'| |   ,--.   |      ||||                   | -------and------- ||||      |   ,--.   | |`-..-'|    )\\
-          /  )  | .   :| |_.','`.`._|      ||||                   | -enter------your- ||||      |_.','`.`._| | .   :|   /  )
-         ( * (  | . :  | |--'    `--|      ||||                   | -------text------ ||||      |--'    `--| | . :  |  ( * (
+                    :       .'--`.         |||| -Happy=---------- |                   ||||         .'--`.        :
+                  : .:     /`.__.'\        |||| -Birthday-------- |                   ||||        /`.__.'\     : .:
+                 :    .   /        \       |||| -Happy----------- |     --==*==--     ||||       /        \   :    .
+           (    ,-'``'-. ;          ;      |||| -Birthday-------- | -Happy----------- ||||      ;          ; ,-'``'-.    (
+           )\   |`-..-'| |   ,--.   |      ||||                   | -Birthday-------- ||||      |   ,--.   | |`-..-'|    )\\
+          /  )  | .   :| |_.','`.`._|      ||||                   | -To--You--------- ||||      |_.','`.`._| | .   :|   /  )
+         ( * (  | . :  | |--'    `--|      ||||                   | ----------------- ||||      |--'    `--| | . :  |  ( * (
           \ #/  |`-..-'| ||   | | | |      ||||__________________ | _              ___||||      ||   | | | | |`-..-'|   \#/ 
         .-"#'-. \::::::/ ||)|/|)|)|\|      ||/===================\|/===================\||      ||)|/|)|)|\| \::::::/ .-"#'-.
         |"-.-"|--`::::'--|._ ~**~ _.|------`--------------------~___~-------------------''------|._ ~**~ _.|--`::::'--|"-.-"|
