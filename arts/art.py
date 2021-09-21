@@ -18,7 +18,7 @@ Copy these codes and paste it before the text for the color your wish
 
 # Happy Birthday Love
 '''
-https://patorjk.com/software/taag/#p=display&f=Crawford2&t=Happy%20Birthday%0A%20%20%20%20%20%20Name
+http://patorjk.com/software/taag/#p=display&f=Crawford2&t=Happy%20Birthday%0A%20%20%20%20%20%20HUMANVITHA
 Go to the above link and generate art to replace 'Happy Birthday Love' with other text you wish to display.
 '''
 
