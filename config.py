@@ -8,7 +8,7 @@ codingSpeed = 0.01
 codeColor='red'
 # Audio
 playAudio = True
-audio = 'HappyBirthday.wav'
+audio = 'HappyBirthday.mp3'
 # Random color is choosen from the list
 color = ['red','green','yellow','blue','magenta','cyan','white']
 # Change the keys of the dict to change the color codes

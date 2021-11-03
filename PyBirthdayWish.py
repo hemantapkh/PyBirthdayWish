@@ -4,7 +4,7 @@ import os,random
 from threading import Thread
 from time import sleep
 
-import simpleaudio
+import vlc
 from termcolor import colored
 
 from config import *
@@ -64,9 +64,8 @@ def pprint(art,time):
 
 def pAudio():
     if playAudio:
-        wave_obj = simpleaudio.WaveObject.from_wave_file(resource_path(audio))
-        play_obj = wave_obj.play()
-        play_obj.wait_done()
+        p = vlc.MediaPlayer(resource_path(audio))
+        p.play()
 
 # Code reader
 with open(resource_path(__file__)) as f_in:
@@ -75,8 +74,8 @@ with open(resource_path(__file__)) as f_in:
 def pcode():
     # Print the code before wishing 
     if codePrint:
-        for i in range(len(art.code)):
-            print(colored(art.code[i], codeColor),sep='', end='',flush= True);sleep(codingSpeed)
+        for i in range(len(code)):
+            print(colored(code[i], codeColor),sep='', end='',flush= True);sleep(codingSpeed)
         input('\n\n'+colored('python3','blue')+colored(' PyBirthdayWish.py','yellow'))
         os.system('cls' if os.name == 'nt' else 'clear')
     else:

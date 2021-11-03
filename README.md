@@ -53,11 +53,11 @@
 * If everthing is working as intended, you can create an executable by using pyinstaller with the following command
     * On windows
         ```bash
-        pyinstaller --noconfirm --onefile --console --icon "icon.ico" --no-embed-manifest --add-data "arts;arts/"  --add-data "config.py;." --add-data "HappyBirthday.wav;." --add-data "PyBirthdayWish.py;."  "PyBirthdayWish.py"
+        pyinstaller --noconfirm --onefile --console --icon "icon.ico" --no-embed-manifest --add-data "arts;arts/"  --add-data "config.py;." --add-data "HappyBirthday.mp3;." --add-data "PyBirthdayWish.py;."  "PyBirthdayWish.py"
         ```
     * On Unix based system
         ```bash
-        pyinstaller --noconfirm --onefile --console --icon "icon.ico" --no-embed-manifest --add-data "arts:arts/"  --add-data "config.py;." --add-data "HappyBirthday.wav:." --add-data "PyBirthdayWish.py:."  "PyBirthdayWish.py"
+        pyinstaller --noconfirm --onefile --console --icon "icon.ico" --no-embed-manifest --add-data "arts:arts/"  --add-data "config.py:." --add-data "HappyBirthday.mp3:." --add-data "PyBirthdayWish.py:."  "PyBirthdayWish.py"
         ```
 
 * Send the executable file (Inside dist folder) to your friend and wish them a pythonic happy birthday.
