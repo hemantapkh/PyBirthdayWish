@@ -1,2 +1,3 @@
 termcolor
 simpleaudio
+pyinstaller
