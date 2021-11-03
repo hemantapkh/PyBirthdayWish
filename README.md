@@ -60,7 +60,7 @@
         pyinstaller --noconfirm --onefile --console --icon "icon.ico" --no-embed-manifest --add-data "arts:arts/"  --add-data "config.py;." --add-data "HappyBirthday.wav:." --add-data "PyBirthdayWish.py:."  "PyBirthdayWish.py"
         ```
 
-* Send the executable file to your friends and wish them happy birthday.
+* Send the executable file (Inside dist folder) to your friend and wish them a pythonic happy birthday.
 -----
 
 Made with :heart: and Python.
