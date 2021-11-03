@@ -122,8 +122,4 @@ mainArt = \
         '-._,-' `-....-'     ````                                                                   ````     `-....-' '-._,-'
          
          
-'''   
-
-# Code reader
-with open('PyBirthdayWish.py') as f_in:
-	code = f_in.read()
+'''

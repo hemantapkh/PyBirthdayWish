@@ -4,8 +4,8 @@ import os,random
 from threading import Thread
 from time import sleep
 
+import simpleaudio
 from termcolor import colored
-from playsound import playsound
 
 from config import *
 
@@ -33,6 +33,16 @@ def replaceMultiple(mainString, toBeReplace, newString):
     
     return  mainString
 
+def resource_path(relative_path):
+    """ Get absolute path to resource, works for dev and for PyInstaller """
+    try:
+        # PyInstaller creates a temp folder and stores path in _MEIPASS
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
+
 def pprint(art,time):
     color_used = [random.choice(color)]
     colorAttribute = []
@@ -54,7 +64,13 @@ def pprint(art,time):
 
 def pAudio():
     if playAudio:
-       playsound(audio)
+        wave_obj = simpleaudio.WaveObject.from_wave_file(resource_path(audio))
+        play_obj = wave_obj.play()
+        play_obj.wait_done()
+
+# Code reader
+with open(resource_path(__file__)) as f_in:
+	code = f_in.read()
         
 def pcode():
     # Print the code before wishing 
@@ -64,12 +80,18 @@ def pcode():
         input('\n\n'+colored('python3','blue')+colored(' PyBirthdayWish.py','yellow'))
         os.system('cls' if os.name == 'nt' else 'clear')
     else:
-        input(colored('press {Enter}...','blue'))
+        input(colored('press F11 and hit {Enter}...','blue'))
         os.system('cls' if os.name == 'nt' else 'clear')
 
 # Clearing terminal
 os.system('cls' if os.name == 'nt' else 'clear')
-pcode()
-Thread(target = pAudio).start()
-Thread(target = pprint, args=(art.mainArt,speed)).start()
-input()
+
+try:
+    pcode()
+    Thread(target = pAudio).start()
+    Thread(target = pprint, args=(art.mainArt,speed)).start()
+    input()
+
+except KeyboardInterrupt:
+    print(colored('\n[-] Thanks!!','red'))
+    os._exit(0)

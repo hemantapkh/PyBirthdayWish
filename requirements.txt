@@ -1,3 +1,2 @@
 termcolor
-playsound
-PyObjC; sys_platform == 'darwin'
+simpleaudio
